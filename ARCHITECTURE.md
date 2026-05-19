@@ -49,4 +49,13 @@ Core Components
 |  Stabilized Output    | <---- |   Execution Controller  |
 +-----------------------+       +-------------------------+
 
+Core Components
+​Gateway API Layer: The entry point for all incoming data vectors. It performs initial schema validation and sanitization.
+​Stability Guardrail: Utilizes Lipschitz-filtering and Brouwer-Fixed-Point mapping to detect and clamp signal drift. Triggers automated reversion to the anchor state (\vec{x}_{root}) upon instability.
+​Proprietary Kernel: The system's core. Decoupled from infrastructure. Interfaces via high-performance, typed API hooks. Operates within sandboxed execution environments.
+​Evidence & Validation: Integrity documented in docs/evidence/. Demonstrates real-time neutralization of signal anomalies and sub-millisecond latency.
+​Security & Integrity Policy
+​Data Isolation: All process control data is handled in-memory.
+​Hardware Agnostic: Stability parity across heterogeneous mobile platforms (Tensor/Exynos).
+​AION FSCM Architecture - Designed for Deterministic Excellence.
 
