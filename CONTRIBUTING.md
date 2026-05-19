@@ -1,0 +1,1 @@
+This project is currently in a highly specialized architectural phase. Contributions are limited to infrastructure and documentation. Please open an issue before submitting a PR to discuss scope.
